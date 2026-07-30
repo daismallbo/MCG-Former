@@ -5,7 +5,7 @@ from typing import List, Dict
 @dataclass
 class Config:
     # Data
-    DATA_DIR: str = "./data"
+    DATA_DIR: str = "./dataset"
     BATTERY_NAMES: List[str] = field(default_factory=lambda: ["B0005", "B0006", "B0007", "B0018"])
     INPUT_DIM: int = 4
     CYCLE_LEN: int = 100
